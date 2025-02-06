@@ -1,14 +1,10 @@
 function enter() {
-  let input = document.getElementById("numberInput").value; // Get input value
-  let number = parseFloat(input); // Convert input to number
+  let number = document.getElementById("numberInput").value; // Get input value
 
-  let outputDiv = document.getElementById("output"); // Get the output div
+  let square = number * number; // Sqauring the given number
 
-  if (!isNaN(number)) {
-    let square = number * number;
-
-    outputDiv.innerHTML = `<h1>The square of ${number} is ${square}</h1>`;
-  } else {
-    outputDiv.innerHTML = `<h1 style="color: red;">Please enter a valid number.</h1>`;
-  }
+  // Displaying the output
+  document.getElementById(
+    "output"
+  ).innerHTML = `<h1>The square of ${number} is ${square}</h1>`;
 }
