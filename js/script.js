@@ -6,5 +6,5 @@ function enter() {
   // Displaying the output
   document.getElementById(
     "output"
-  ).innerHTML = `<h1>The square of ${number} is ${square}</h1>`;
+  ).innerHTML = `<h1>Square of ${number} is ${square}</h1>`;
 }
