@@ -7,9 +7,8 @@ function enter() {
   if (!isNaN(number)) {
     let square = number * number;
 
-    // Create or update the h1 element
-    outputDiv.innerHTML = `<h1>The square of ${number} is ${square}</h1>`; // Display result in bold h1
+    outputDiv.innerHTML = `<h1>The square of ${number} is ${square}</h1>`;
   } else {
-    outputDiv.innerHTML = `<h1 style="color: red;">Please enter a valid number.</h1>`; // Error message in red
+    outputDiv.innerHTML = `<h1 style="color: red;">Please enter a valid number.</h1>`;
   }
 }
